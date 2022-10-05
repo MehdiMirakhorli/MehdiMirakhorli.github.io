@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0030)http://se.rit.edu/~mehdi/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class="js" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Mehdi Mirakhorli, Software Architecture, Tactics, Traceability, Archie++, Smart IDE, Quality Requirements, TwinPeaks, ICSE, Software Design, Pattern, Archie" /><title>Mehdi Mirakhorli</title>
+<meta name="title" content="Mehdi Mirakhorli, Rochester Institute of Technology, Software Engineering Department" />
+
+
+<link type="text/css" rel="stylesheet" media="all" href="./files/css.css">
+<link rel="stylesheet" href="./files/print.css" type="text/css">
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="/sites/all/themes/townsendnew/ie.css" type="text/css" />
+<![endif]-->
+<script type="text/javascript" async="" src="./files/ga.js"></script>
+<script type="text/javascript" src="./files/js_431ac76be41278840ce0d3d96113d501.js"></script>
+
+<script src="./files/jquery.min.js" type="text/javascript"></script>
+  <script src="./files/jquery.min(1).js" type="text/javascript">
+  </script>
+<!-- This is for opening a Dialog Box for Archie -->
+
+  <script>
+    $(document).ready(function () {
+      $("#closebtn").click(function () {
+        $("#dlg").hide('800', "swing", function () { $("#bkg").fadeOut("500"); });
+      });
+      $("#opn").click(function () {
+        if (document.getElementById('bkg').style.visibility == 'hidden') {
+          document.getElementById('bkg').style.visibility = '';
+          $("#bkg").hide();
+        }
+        if (document.getElementById('dlg').style.visibility == 'hidden') {
+          document.getElementById('dlg').style.visibility = '';
+          $("#dlg").hide();
+        }
+        $("#bkg").fadeIn(500, "linear", function () { $("#dlg").show(800, "swing"); });
+      });
+
+    });
+  </script>
+ <!-- END This is for opening a Dialog Box for Archie -->
+
+ <!-- This is for opening a Dialog Box for Archie -->
+
+  <script>
+    $(document).ready(function () {
+      $("#closebtn1").click(function () {
+        $("#dlg1").hide('800', "swing", function () { $("#bkg1").fadeOut("500"); });
+      });
+      $("#opn1").click(function () {
+        if (document.getElementById('bkg1').style.visibility == 'hidden') {
+          document.getElementById('bkg1').style.visibility = '';
+          $("#bkg1").hide();
+        }
+        if (document.getElementById('dlg1').style.visibility == 'hidden') {
+          document.getElementById('dlg1').style.visibility = '';
+          $("#dlg1").hide();
+        }
+        $("#bkg1").fadeIn(500, "linear", function () { $("#dlg1").show(800, "swing"); });
+      });
+
+    });
+  </script>
+ <!-- END This is for opening a Dialog Box for Archie -->
+<script>
+(function($) {
+    $(document).ready(function() {
+        var tileCount = $(".tile").length;
+        var columnWeight = 12 / tileCount;
+        var selectedColumnWeight = columnWeight * 1.5
+        var unselectedColumnWeight = (12 - selectedColumnWeight) / (tileCount - 1) ;
+
+        $(".tile").click(function() {
+            var tile = $(this);
+            var otherTiles = tile.siblings();
+            var currentSelectedTile = otherTiles.filter(".selected");
+            var unselectedOtherTiles = otherTiles.not(".selected");
+            var otherTileWeight, tileWeight;
+            if (currentSelectedTile.length) {
+                otherTileWeight = unselectedColumnWeight;
+                tileWeight = unselectedColumnWeight;
+            }
+            else {
+                otherTileWeight = columnWeight;
+                tileWeight = columnWeight;
+            }
+
+            tile.toggleClass("selected col" + tileWeight + " col" + selectedColumnWeight, 600);
+            currentSelectedTile.toggleClass("selected col" + unselectedColumnWeight + " col" + selectedColumnWeight, 600);
+            unselectedOtherTiles.toggleClass("col" + otherTileWeight + " col" + unselectedColumnWeight, 600);
+        });
+    });
+})(jQuery);
+</script>
+<script>
+    $(document).ready(function () {
+      $("#closebtn").click(function () {
+        $("#dlg").hide('800', "swing", function () { $("#bkg").fadeOut("500"); });
+      });
+      $("#opn").click(function () {
+        if (document.getElementById('bkg').style.visibility == 'hidden') {
+          document.getElementById('bkg').style.visibility = '';
+          $("#bkg").hide();
+        }
+        if (document.getElementById('dlg').style.visibility == 'hidden') {
+          document.getElementById('dlg').style.visibility = '';
+          $("#dlg").hide();
+        }
+        $("#bkg").fadeIn(500, "linear", function () { $("#dlg").show(800, "swing"); });
+      });
+
+    });
+  </script>
+
+<script type="text/javascript"> </script>
+
+
+
+<style type="text/css">
+.style1 {
+	color: #932D09;
+}
+.style4 {
+	font-size: large;
+}
+.style5 {
+	font-size: xx-large;
+}
+.style6 {
+	font-size: x-large;
+}
+.style7 {
+	font-size: medium;
+}
+.style9 {
+	margin-left: 104px;
+}
+.style10 {
+	margin-bottom: 0px;
+	color: #932D09;
+}
+
+  .blockbkg {
+      background-color: black;
+      opacity: 90%;
+      filter:alpha(opacity=90);
+      background-color: rgba(0,0,0,0.90);
+      width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      float: absolute;
+      position: fixed;
+      top: 0;
+      left: 0;
+      color: white;
+    }
+    .cont {
+      background-color: #A8A9A3;
+      color: black;
+      font-size: 16px;
+      border: 1px solid gray;
+      padding: 20px;
+      display:block;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+	  right:10%;
+      height: 600px;
+      overflow-y: scroll;
+    }
+    .closebtn {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      margin: 2px;
+      float: right;
+      top: 0;
+      background-image: url(Mehdi%20Mirakhorli_files/x.png);
+      background-repeat: no-repeat;
+      background-position:center;
+      background-color: lightgray;
+      display: block;
+    }
+    .closebtn:hover {
+      cursor: pointer;
+    }
+
+
+.style11 {
+	color: #D3D4D1;
+}
+
+
+</style>
+</head>
+
+<body class="not-front sidebar-right lightbox-processed">
+
+<div id="page" class="clear-block">
+
+<div class="clear-block" id="above-header">
+<div class="clear-block" id="above-header-inner">
+<span style="float: right">
+&nbsp; | &nbsp;
+<a href="mailto:mehdi -@- se.rit.edu?Subject=Hello" target="_top"><span class="style11">Contact Me</span></a>
+
+</span>
+<a href="">Personal Web page of Mehdi Mirakhorli</a>
+</div>
+</div>
+
+<div id="header" class="clear-block">
+<div id="header-inner">
+<div id="logo-title">
+<h1 class="not-home">
+&nbsp;</h1> <!-- /.not-home -->
+</div> <!-- /#logo-title -->
+
+<div id="header-region">
+<div id="block-views-projects-block_2" class="block block block-views region-odd even region-count-1 count-2 clear-block"><div class="block-inner">
+
+<h2 class="title">Mehdi Mirakhorli</h2>
+
+<div class="content">
+<div class="view view-projects view-id-projects view-display-id-block_2 view-dom-id-3">
+
+
+
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first">
+
+<div class="views-field-title">
+<span class="field-content">
+
+
+
+<br>
+Kodak Endowed Scholar & Associate Professor<br>
+<a href="http://www.se.rit.edu/">
+Department of Software Engineering</a>
+<br>
+<a href="http://www.rit.edu/">
+Rochester Institute of Technology </a><br>
+<a href="">
+134 Lomb Memorial Drive
+  </a><br>
+<a href="">
+Rochester, NY 14623-5608</a></span></div>
+
+<div class="views-field-body">
+<div class="field-content"><p>Email: mehdi -at- se.rit.edu</p></div>
+</div>
+</div>
+<div class="views-row views-row-2 views-row-even views-row-last">
+
+<div class="views-field-body">
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</div>   </div>
+
+
+</div></div> <!-- /block-inner, /block -->
+</div> <!-- /#header-region -->
+
+
+<div class="header-info " style="width: 296px">
+<div class="slogan">
+<img alt="Mehdi" src="./files/image.jpg" width="211" height="233"></div>
+
+<!--div class="go-to-link"><a href="#">First time? Watch Video</a></div-->
+</div> <!-- /.header-info -->
+
+</div> <!-- /#header-inner -->
+</div> <!-- /#header -->
+<div id="nav" class="clear-block">
+<div id="nav-inner">
+<ul class="links" style="center: 5%; top: -8px; height: 53px; width: 90%">
+<li class="first menu-650 active-trail" style="height: 51px">
+<a href="./index.html" title="Mehdi" class="menu-650 active-trail active">
+<span style="width: 30px">Home</span></a></li>
+<!--<li class="menu-5104" "=""><a href="./#Fund"><span style="width: 71px">Funding</span></a></li>-->
+<li><a href="./Students.html" class="menu-5104"><span>Students</span></a></li>
+<li class="menu-5104" "=""><a href="./Publications.html"><span style="width: 71px">Publications</span></a></li>
+<li class="menu-4922"><a href="./Research.html"><span>Research Projects</span></a></li>
+<li><a href="./Activities.html" class="menu-5104"><span>Synergistic Activities</span></a></li>
+<li class="menu-4922"><a href="./Teaching.html"><span>Teaching</span></a></li>
+<li><a href="./Personal.html" class="menu-4922"><span>Personal</span></a></li>
+</ul>
+</div> <!-- /#nav-inner -->
+</div> <!-- /#nav -->
+
+
+
+
+<div id="main" class="clear-block">
+<table style="width: 100%">
+<tbody><tr>
+<td style="width: 100%">
+
+
+<div class="views-field-title">
+<span class="field-content">
+</br>
+
+
+
+
+</span></div>
+
+
+<div class="panel-main-area-wrap" style="right: -88px; top: 0px; width: 97%; margin-left: 0px;">
+<div class="panel-top clear-block">
+<div class="panel-pane pane-views-panes pane-lab-blog-panel-pane-1">
+<div class="pane-content">
+<div class="view view-lab-blog view-id-lab_blog view-display-id-panel_pane_1 view-dom-id-1">
+<div class="view-content">
+
+
+<br>
+<a name="Pub"></a>
+<h2 class="pane-title"><strong>Teaching</strong></h2>
+</div>
+</div>
+</div>
+</div>
+</span></div>
+
+
+  <li>Fall 2016-2017, Software Architecture and Product Lines</li>
+
+  <li>Spring 2016-2017, Software Requirements and Architecture</li>
+  <li>Spring 2015-2016, Software Architecture and Product Lines</li>
+
+  <li>Fall 2014-2015, Software Modeling</li>
+  <li>Fall 2014-2015, Software Requirements and Architecture</li>
+
+
+<br>
+  <h4 class="pane-title">Prior Joining RIT</h4>
+
+  <li>
+  <span class="field-content">Software Engineering Principles</span></li>
+  <li>Compiler Construction</li>
+  <li>Advanced Topic in Software Engineering</li>
+  <li>Introduction to Object Oriented Programming in C++</li>
+<br>
+
+<div class="panel-top clear-block">
+<div class="panel-pane pane-views-panes pane-lab-blog-panel-pane-1">
+<div class="pane-content">
+<div class="view view-lab-blog view-id-lab_blog view-display-id-panel_pane_1 view-dom-id-1">
+<div class="view-content">
+
+<h2 class="pane-title"><strong>Educational Research</strong></h2>
+<ul>
+<li>Mehran Mozafari Kermani, Mehdi Mirakhorli, “Multidisciplinary Approaches and Challenges in Integrating Emerging Medical Devices Security Research and Education”, ASEE Conferences: American Society for Engineering Education (ASEE), 2016.</li>
+<li>Scott Hawker, Robert Kuehl, Mehdi Mirakhorli, Merged Software Requirements and Architecture Course, ASEE Conferences: American Society for Engineering Education (ASEE), 2016.</li>
+<li>Jane Cleland Huang, Muhammad Ali Babar, Mehdi Mirakhorli, “An Inverted Classroom Experience: Engaging Students in Architectural Thinking for Agile Projects”, Software Engineering Education and Training (SEET) Track, 36th International Conference on Software Engineering (ICSE), 2014.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</span></div>
+
+
+<div class="panel-top clear-block">
+<div class="panel-pane pane-views-panes pane-lab-blog-panel-pane-1">
+<div class="pane-content">
+<div class="view view-lab-blog view-id-lab_blog view-display-id-panel_pane_1 view-dom-id-1">
+<div class="view-content">
+
+<h2 class="pane-title"><strong>Architecture Prototyping Activites</strong></h2>
+
+In SWEN-755 course I have developed the concept of architecture-prototyping to teach common industrial practices as they relate to software design.
+In this activity, each week the students learn a tactic or design concept, followed by an architecture-prototyping activity in which students,
+<ol>
+<li> design a system using that tactic
+  <li> implement the tactic and system with minimal functions.
+    In this step many of the business components are mocked, they are structured and named based on the domain but many of them do not implement the business functions
+     unless necessary for the tactic. However, the tactic functionality is fully implemented.
+<li> Students are encouraged to use any existing coding framework to implement the design concepts.
+  Each architecture-prototyping activity is followed by a retrospective (post-mortems) meeting in which students discuss what went right and wrong on that activity,
+  and what they learned from tactic which they did not know that before. We collectively document and share the lessons learned from the activity.
+</ol>
+
+<a href="https://github.com/MehdiMirakhorli/SWEN-755/">Click here</a> to see the github page of this activity.
+
+
+</div>
+</div>
+</div>
+</div>
+</span></div>
+
+
+
+
+<div class="panel-top clear-block">
+<div class="panel-pane pane-views-panes pane-lab-blog-panel-pane-1">
+<div class="pane-content">
+<div class="view view-lab-blog view-id-lab_blog view-display-id-panel_pane_1 view-dom-id-1">
+<div class="view-content">
+
+<h2 class="pane-title"><strong>Role-Playing in an Improv-Technical Shows</strong></h2>
+Architecture is more than design and coding. Students also need to practice rationalizing different architectural choices,
+communication with other stakeholders, and managing conflicts between stakeholders.
+I have designed an improv-technical show which simulates a Joint Application Design session, and helps the students gain and practice the skills required by an architect.
+In this activity we work on the case study of Healthcare.gov system. Each student play the role of a stakeholder.
+I have developed a persona for each of the stakeholder describing their win and loss scenarios for the system. Through the joint application design we collectively
+ identify requirements for the system, prioritize them, design a baseline architecture, negotiate conflicts and reason abot the cost of the sytem.
+</div>
+</div>
+</div>
+</div>
+</span></div>
+
+
+
+<td style="width:1000%">
+</td>
+</tr>
+</tbody></table>
+</div>
+<!-- /#main -->
+
+<div id="footer" class="clear-block">
+<div id="footer-inner">
+<div id="foot-links">
+
+<a href="">Last Updated February 1st, 2018</a> &nbsp;|&nbsp;
+
+
+
+
+
+<a href="">2018 © copyright</a>             </div>
+
+
+ <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9623175;
+var sc_invisible=1;
+var sc_security="9028568b";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script><script type="text/javascript" src="./files/counter.js"></script>
+<noscript>&lt;div class="statcounter"&gt;&lt;a title="free web stats"
+href="http://statcounter.com/free-web-stats/"
+target="_blank"&gt;&lt;img class="statcounter"
+src="http://c.statcounter.com/9623175/0/9028568b/1/"
+alt="free web stats"&gt;&lt;/a&gt;&lt;/div&gt;</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+
+
+</div> <!-- /#footer-inner -->
+</div> <!-- /#footer -->
+</div>
+<!-- /#page -->
+
+
+
+
+
+
+
+
+            </body></html>

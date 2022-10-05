@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0030)http://se.rit.edu/~mehdi/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class="js" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Mehdi Mirakhorli, Software Architecture, Tactics, Traceability, Archie++, Smart IDE, Quality Requirements, TwinPeaks, ICSE, Software Design, Pattern, Archie" /><title>Mehdi Mirakhorli</title>
+<meta name="title" content="Mehdi Mirakhorli, Rochester Institute of Technology, Software Engineering Department" />
+
+
+<link type="text/css" rel="stylesheet" media="all" href="./files/css.css">
+<link rel="stylesheet" href="./files/print.css" type="text/css">
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="/sites/all/themes/townsendnew/ie.css" type="text/css" />
+<![endif]-->
+<script type="text/javascript" async="" src="./files/ga.js"></script>
+<script type="text/javascript" src="./files/js_431ac76be41278840ce0d3d96113d501.js"></script>
+
+<script src="./files/jquery.min.js" type="text/javascript"></script>
+  <script src="./files/jquery.min(1).js" type="text/javascript">
+  </script>
+<!-- This is for opening a Dialog Box for Archie -->
+
+  <script>
+    $(document).ready(function () {
+      $("#closebtn").click(function () {
+        $("#dlg").hide('800', "swing", function () { $("#bkg").fadeOut("500"); });
+      });
+      $("#opn").click(function () {
+        if (document.getElementById('bkg').style.visibility == 'hidden') {
+          document.getElementById('bkg').style.visibility = '';
+          $("#bkg").hide();
+        }
+        if (document.getElementById('dlg').style.visibility == 'hidden') {
+          document.getElementById('dlg').style.visibility = '';
+          $("#dlg").hide();
+        }
+        $("#bkg").fadeIn(500, "linear", function () { $("#dlg").show(800, "swing"); });
+      });
+
+    });
+  </script>
+ <!-- END This is for opening a Dialog Box for Archie -->
+
+ <!-- This is for opening a Dialog Box for Archie -->
+
+  <script>
+    $(document).ready(function () {
+      $("#closebtn1").click(function () {
+        $("#dlg1").hide('800', "swing", function () { $("#bkg1").fadeOut("500"); });
+      });
+      $("#opn1").click(function () {
+        if (document.getElementById('bkg1').style.visibility == 'hidden') {
+          document.getElementById('bkg1').style.visibility = '';
+          $("#bkg1").hide();
+        }
+        if (document.getElementById('dlg1').style.visibility == 'hidden') {
+          document.getElementById('dlg1').style.visibility = '';
+          $("#dlg1").hide();
+        }
+        $("#bkg1").fadeIn(500, "linear", function () { $("#dlg1").show(800, "swing"); });
+      });
+
+    });
+  </script>
+ <!-- END This is for opening a Dialog Box for Archie -->
+<script>
+(function($) {
+    $(document).ready(function() {
+        var tileCount = $(".tile").length;
+        var columnWeight = 12 / tileCount;
+        var selectedColumnWeight = columnWeight * 1.5
+        var unselectedColumnWeight = (12 - selectedColumnWeight) / (tileCount - 1) ;
+
+        $(".tile").click(function() {
+            var tile = $(this);
+            var otherTiles = tile.siblings();
+            var currentSelectedTile = otherTiles.filter(".selected");
+            var unselectedOtherTiles = otherTiles.not(".selected");
+            var otherTileWeight, tileWeight;
+            if (currentSelectedTile.length) {
+                otherTileWeight = unselectedColumnWeight;
+                tileWeight = unselectedColumnWeight;
+            }
+            else {
+                otherTileWeight = columnWeight;
+                tileWeight = columnWeight;
+            }
+
+            tile.toggleClass("selected col" + tileWeight + " col" + selectedColumnWeight, 600);
+            currentSelectedTile.toggleClass("selected col" + unselectedColumnWeight + " col" + selectedColumnWeight, 600);
+            unselectedOtherTiles.toggleClass("col" + otherTileWeight + " col" + unselectedColumnWeight, 600);
+        });
+    });
+})(jQuery);
+</script>
+<script>
+    $(document).ready(function () {
+      $("#closebtn").click(function () {
+        $("#dlg").hide('800', "swing", function () { $("#bkg").fadeOut("500"); });
+      });
+      $("#opn").click(function () {
+        if (document.getElementById('bkg').style.visibility == 'hidden') {
+          document.getElementById('bkg').style.visibility = '';
+          $("#bkg").hide();
+        }
+        if (document.getElementById('dlg').style.visibility == 'hidden') {
+          document.getElementById('dlg').style.visibility = '';
+          $("#dlg").hide();
+        }
+        $("#bkg").fadeIn(500, "linear", function () { $("#dlg").show(800, "swing"); });
+      });
+
+    });
+  </script>
+
+<script type="text/javascript"> </script>
+
+
+
+<style type="text/css">
+.style1 {
+	color: #932D09;
+}
+.style4 {
+	font-size: large;
+}
+.style5 {
+	font-size: xx-large;
+}
+.style6 {
+	font-size: x-large;
+}
+.style7 {
+	font-size: medium;
+}
+.style9 {
+	margin-left: 104px;
+}
+.style10 {
+	margin-bottom: 0px;
+	color: #932D09;
+}
+
+  .blockbkg {
+      background-color: black;
+      opacity: 90%;
+      filter:alpha(opacity=90);
+      background-color: rgba(0,0,0,0.90);
+      width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      float: absolute;
+      position: fixed;
+      top: 0;
+      left: 0;
+      color: white;
+    }
+    .cont {
+      background-color: #A8A9A3;
+      color: black;
+      font-size: 16px;
+      border: 1px solid gray;
+      padding: 20px;
+      display:block;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+	  right:10%;
+      height: 600px;
+      overflow-y: scroll;
+    }
+    .closebtn {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      margin: 2px;
+      float: right;
+      top: 0;
+      background-image: url(Mehdi%20Mirakhorli_files/x.png);
+      background-repeat: no-repeat;
+      background-position:center;
+      background-color: lightgray;
+      display: block;
+    }
+    .closebtn:hover {
+      cursor: pointer;
+    }
+
+
+.style11 {
+	color: #D3D4D1;
+}
+
+
+</style>
+</head>
+
+<body class="not-front sidebar-right lightbox-processed">
+
+<div id="page" class="clear-block">
+
+<div class="clear-block" id="above-header">
+<div class="clear-block" id="above-header-inner">
+<span style="float: right">
+&nbsp; | &nbsp;
+<a href="mailto:mehdi -@- se.rit.edu?Subject=Hello" target="_top"><span class="style11">Contact Me</span></a>
+
+
+
+
+
+</span>
+<a href="">Personal Web page of Mehdi Mirakhorli</a>
+</div>
+</div>
+
+<div id="header" class="clear-block">
+<div id="header-inner">
+<div id="logo-title">
+<h1 class="not-home">
+&nbsp;</h1> <!-- /.not-home -->
+</div> <!-- /#logo-title -->
+
+<div id="header-region">
+<div id="block-views-projects-block_2" class="block block block-views region-odd even region-count-1 count-2 clear-block"><div class="block-inner">
+
+<h2 class="title">Mehdi Mirakhorli</h2>
+
+<div class="content">
+<div class="view view-projects view-id-projects view-display-id-block_2 view-dom-id-3">
+
+
+
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first">
+
+<div class="views-field-title">
+<span class="field-content">
+
+
+
+<br>
+Kodak Endowed Scholar & Associate Professor<br>
+<a href="http://www.se.rit.edu/">
+Department of Software Engineering</a>
+<br>
+<a href="http://www.rit.edu/">
+Rochester Institute of Technology </a><br>
+<a href="">
+134 Lomb Memorial Drive
+  </a><br>
+<a href="">
+Rochester, NY 14623-5608</a></span></div>
+
+<div class="views-field-body">
+<div class="field-content"><p>Email: mehdi -at- se.rit.edu</p></div>
+</div>
+</div>
+<div class="views-row views-row-2 views-row-even views-row-last">
+
+<div class="views-field-body">
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</div>   </div>
+
+
+</div></div> <!-- /block-inner, /block -->
+</div> <!-- /#header-region -->
+
+
+<div class="header-info " style="width: 296px">
+<div class="slogan">
+<img alt="Mehdi" src="./files/image.jpg" width="211" height="233"></div>
+
+<!--div class="go-to-link"><a href="#">First time? Watch Video</a></div-->
+</div> <!-- /.header-info -->
+
+</div> <!-- /#header-inner -->
+</div> <!-- /#header -->
+<div id="nav" class="clear-block">
+<div id="nav-inner">
+<ul class="links" style="center: 5%; top: -8px; height: 53px; width: 90%">
+<li class="first menu-650 active-trail" style="height: 51px">
+<a href="./index.html" title="Mehdi" class="menu-650 active-trail active">
+<span style="width: 30px">Home</span></a></li>
+<!--<li class="menu-5104" "=""><a href="./#Fund"><span style="width: 71px">Funding</span></a></li>-->
+<li><a href="./Students.html" class="menu-5104"><span>Students</span></a></li>
+<li class="menu-5104" "=""><a href="./Publications.html"><span style="width: 71px">Publications</span></a></li>
+<li class="menu-4922"><a href="./Research.html"><span>Research Projects</span></a></li>
+<li><a href="./Activities.html" class="menu-5104"><span>Synergistic Activities</span></a></li>
+<li class="menu-4922"><a href="./Teaching.html"><span>Teaching</span></a></li>
+<li><a href="./Personal.html" class="menu-4922"><span>Personal</span></a></li>
+</ul>
+</div> <!-- /#nav-inner -->
+</div> <!-- /#nav -->
+
+
+
+<div id="main" class="clear-block">
+<table style="width: 100%">
+<tbody><tr>
+<td style="width: 100%">
+
+
+<div class="views-field-title">
+<span class="field-content">
+</br>
+
+
+
+
+</span></div>
+
+
+<div class="panel-main-area-wrap" style="right: -88px; top: 0px; width: 97%; margin-left: 0px;">
+<div class="panel-top clear-block">
+<div class="panel-pane pane-views-panes pane-lab-blog-panel-pane-1">
+<div class="pane-content">
+<div class="view view-lab-blog view-id-lab_blog view-display-id-panel_pane_1 view-dom-id-1">
+<div class="view-content">
+
+
+<br>
+<a name="Pub"></a>
+<h2 class="pane-title"><strong>Personal</strong></h2>
+</div>
+</div>
+</div>
+</div>
+</span></div>
+
+
+  </p><h4>
+
+  My Academic Genealogy</h4>
+  <p>
+
+
+  Most doctoral students work with an academic advisor, who served as their mentor.
+  Through the student-mentor relationship, the educational culture, research styles, manners and ethics are passed on from advisor to student and from one generation to the next.
+
+
+  <br>
+  <br>
+
+  I have traced the genealogy of my mentorship through several generations and discovered that my academic roots began with Thomas Alva Edison. Edison never had an academic mentor and attended public school for only 3 weeks.
+
+
+
+    </p><div id="content" class="onepcssgrid-1200">
+      <div class="onerow">
+          <div class="tile col4" id="about">
+              <a name="genealogy">Click here to see my academic genealogy:</a>
+              <div class="text">
+
+  				<br><br>
+  <img alt="Jane Cleland-Huang" src="./files/Jane.jpg" width="100">My
+  				Adviser was:<br>
+  <h4 style="height: 24px" class="style10">Jane Cleland-Huang</h4>
+
+  				Ph.D. University of Illinois at Chicago.<br>
+  				Faculty: DePaul University<br>
+  <h5>&nbsp;</h5>
+
+
+  <img alt="Jane Cleland-Huang" src="./files/Carl.jpg" width="100">Jane's
+  				Adviser was:<br>
+  <h4 style="height: 24px" class="style10">Carl K. Chang</h4>
+  				Ph.D. Northwestern University<p>
+  Faculty: Iowa State<br>
+
+
+  </p><h5>&nbsp;</h5>
+  <img alt="Stephen S. Yau" src="./files/Stephen S. Yau1.gif" width="100">Carl's
+  				Adviser was:<br>
+  <h4 style="height: 24px" class="style10">Stephen S. Yau</h4>
+  				Ph.D. University of Illinois at Urbana-Champaign<p>
+  Faculty: Northwestern University</p>
+  <br>
+
+  <h5>&nbsp;</h5>
+  <img src="./files/Valkenburg.png" width="100">Stephen's Adviser
+  				was:<br>
+  <h4 style="height: 24px" class="style10">Mac Elwyn Van Valkenburg </h4>
+  				Ph. D. Stanford University<p>
+  Dissertation Title: <i>Polarization and Fading Studies of Meteoric Radio Echoes</i></p><p>
+  Faculty: University of Illinois at Urbana-Champaign
+
+  </p><h5>&nbsp;</h5>
+  <img src="./files/Mike Villard.jpg" width="100">Mac's Adviser
+  				was:<br>
+  <h4 style="height: 24px" class="style10">Oswald Garrison Villard, Jr. </h4>
+  				Ph. D. Stanford University<p>
+  Dissertation Title: <i>A New Technique for Studying Meteors and the Upper
+  Atmosphere</i></p><p>
+  Faculty: Stanford University
+  <br>
+
+  </p><h5>&nbsp;</h5>
+  <img src="./files/Terman.jpg" width="100">Oswald's Adviser was:<br>
+  <h4 style="height: 24px" class="style10">Frederick E. Terman</h4>
+  				Sc.D. M.I.T.<p class="style9">
+  Dissertation Title: <i>Characteristics and Stability of Transmission Systems</i><br>
+  Faculty: Stanford University<br>
+  Highlights: Widely known (with William Shockley) as the father of Silicon Valley<br>
+  Founding member of the National Academy of Engineering.<br>
+
+  </p><h5>&nbsp;</h5>
+  <img src="./files/vannevar-bush.jpg" width="100">Fredrick's
+  				Adviser was:<br>
+  <h4 style="height: 24px" class="style10">Vannevar Bush</h4>
+  				Ph.D. M.I.T. &amp; Harvard<p>
+  Dissertation Title: <i>Oscillating-current Circuits: An Extension of the Theory
+  of Generalized Angular Velocities, with Applications to the Coupled Circuit and
+  the Artificial Transmission Line</i></p><p>
+  Faculty: M.I.T.</p><p>
+  Highlights: The first presidential science advisor (FDR), Primary organizer of
+  the Manhattan Project, Proposed the Creation of the National Science Foundation.<br>
+
+
+  <img src="./files/Arthur_E._Kennelly.jpg" width="100">Vannevar's
+  Adviser was:<br>
+  </p><h4 style="height: 24px" class="style10">Arthur E. Kennelly</h4>
+
+  				Self Taught!<p>
+
+  Faculty: M.I.T. &amp; Harvard</p><p>
+  Highlights: Apprenticed in Thomas Edison's West Orange lab, Co-created the
+  electric chair<br>
+
+
+  </p><h5>&nbsp;</h5>
+  <img src="./files/Thomas_Edison2.jpg" width="100">Arthur's Mentor
+  				was:<br>
+  <h4 style="height: 24px" class="style10">Thomas Alva Edison</h4>
+
+  				Arthur had no graduate advisor, but he is one of a few gifted
+  				men who has been considered as <a href="http://www.ieeeghn.org/wiki/index.php/Thomas_Alva_Edison">
+  				Thomas A. Edison's</a> mentee. Arthur has been <a href="http://select.nytimes.com/gst/abstract.html?res=F00716F83B5C1B7B93CBA8178DD85F4D8385F9">
+  				Edison's Ex-Aids</a> and
+   <a href="http://inventors.about.com/library/inventors/bledisonmuckers3.htm">
+  				stated</a>
+  				"The privilege which I had being with this great man for six
+  				years was the greatest inspiration of my life."
+
+  <br>
+  <h5>&nbsp;</h5>
+
+
+  <h5 style="height: 24px" class="style10">
+
+  My search ends here. Edison was also for sure self-taught, he drop out of his
+  school after a total of three months attendance!
+  </h5>
+
+              </div>
+
+      </div>
+  </div>
+
+
+
+  <br>
+  <h4>
+  My hobbies</span></h4>
+  <p>
+  I ride my bicycle every day.
+  <br><br>
+  In my free time, I study the architecture of random systems, and sometimes I get my hands dirty and reconstruct the architectures from low -level artifacts.
+  <br><br>
+
+  <h4>My very first software programs are:</h4>
+  Animated LED Message Board.<br>
+  Simulation of 32bit Pipelined RISC CPU.<br>
+  Hot Standby Fault Failover for Horizontally and Vertically Distributed Databases.<br><br>
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+<span>
+
+<div class="panel-sidebar-right">
+<div class="panel-inner">
+
+</div>
+<!-- /.panel-inner -->
+</div>
+</span>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td style="width:1000%">
+</td>
+</tr>
+</tbody></table>
+</div>
+<!-- /#main -->
+
+<div id="footer" class="clear-block">
+<div id="footer-inner">
+<div id="foot-links">
+
+
+<a href="">Last Updated February 1st, 2018</a> &nbsp;|&nbsp;
+
+
+
+
+
+<a href="">2018 © copyright</a>            </div>
+
+
+ <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9623175;
+var sc_invisible=1;
+var sc_security="9028568b";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script><script type="text/javascript" src="./files/counter.js"></script>
+<noscript>&lt;div class="statcounter"&gt;&lt;a title="free web stats"
+href="http://statcounter.com/free-web-stats/"
+target="_blank"&gt;&lt;img class="statcounter"
+src="http://c.statcounter.com/9623175/0/9028568b/1/"
+alt="free web stats"&gt;&lt;/a&gt;&lt;/div&gt;</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+
+
+</div> <!-- /#footer-inner -->
+</div> <!-- /#footer -->
+</div>
+<!-- /#page -->
+
+
+
+
+
+
+
+
+            </body></html>
