@@ -1,65 +1,406 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mehdi Tarrit Mirakhorli">
-  <meta name="author" content="Mehdi Tarrit Mirakhorli">
-  <title>Mehdi Mirakhorli</title>
-  <link rel="stylesheet" type="text/css" href="./files/css.css">
-  <link rel="stylesheet" type="text/css" href="./files/print.css">
-  <script src="./files/jquery.min.js"></script>
-  <script src="./files/jquery.min(1).js"></script>
-  <style>
-    /* Add your CSS styles for mobile responsiveness here */
-  </style>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" class="js" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="Mehdi Tarrit Mirakhorli, Software Security, University of Hawaii" /><title>Mehdi Mirakhorli</title>
+<meta name="title" content="Mehdi Tarrit Mirakhorli, University of Hawaii, Software Engineering Department" />
+<meta name="description" content="Mehdi Tarrit Mirakhorli" />
 
-<div id="page">
-  <div id="header">
-    <div id="header-inner">
-      <div id="logo-title">
-        <h1 class="not-home">Mehdi Mirakhorli</h1>
-      </div>
-      <div id="header-region">
-        <h2 class="title">Mehdi Mirakhorli</h2>
-        <div class="content">
-          <p>Associate Professor | <a href="https://www.rit.edu/computing/cybersecurityinstitute">Director of Software Assurance Laboratory</a></p>
-          <p>University of Hawaii at Manoa | <a href="https://www.rit.edu/directory/mxmvse-mehdi-mirakhorli">Information and Computer Sciences (ICS)</a></p>
-          <p>1680 East-West Road</p>
-          <p>Honolulu, HI 96822 USA</p>
-          <p>Email: mehdi23 -at- hawaii.edu</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="nav">
-    <div id="nav-inner">
-      <ul class="links">
-        <li class="menu-650 active-trail"><a href="./index.html" title="Mehdi">Home</a></li>
-        <li><a href="./CurriculumVitae.pdf">Curriculum Vitae</a></li>
-        <li><a href="./Publications.html">Publications</a></li>
-        <li><a href="https://design.se.rit.edu/">Research Projects</a></li>
-        <li><a href="./Teaching.html">Teaching</a></li>
-        <li><a href="./Personal.html">Personal</a></li>
-      </ul>
-    </div>
-  </div>
-  <div id="main">
-    <p>Mehdi Tarrit Mirakhorli is an associate professor in the department of Information and Computer Sciences at University of Hawaii at Manoa...</p>
-    <!-- Add your content here -->
-  </div>
-  <div id="footer">
-    <div id="footer-inner">
-      <div id="foot-links">
-        <a href="">Last Updated February 1st, 2018</a>
-        &nbsp;|&nbsp;
-        <a href="">2018 © copyright</a>
-      </div>
-    </div>
-  </div>
+<meta name="author" content="Mehdi Tarrit Mirakhorli">
+<meta name="author" content="Mehdi Tarrit Mirakhorli">
+<meta name="googlebot" content="index, follow">
+<meta name="robots" content="index, follow">
+
+
+
+
+
+<link type="text/css" rel="stylesheet" media="all" href="./files/css.css">
+<link rel="stylesheet" href="./files/print.css" type="text/css">
+<!--[if lte IE 7]>
+<link rel="stylesheet" href="/sites/all/themes/townsendnew/ie.css" type="text/css" />
+<![endif]-->
+<script type="text/javascript" async="" src="./files/ga.js"></script>
+<script type="text/javascript" src="./files/js_431ac76be41278840ce0d3d96113d501.js"></script>
+
+<script src="./files/jquery.min.js" type="text/javascript"></script>
+  <script src="./files/jquery.min(1).js" type="text/javascript">
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $("#closebtn").click(function () {
+        $("#dlg").hide('800', "swing", function () { $("#bkg").fadeOut("500"); });
+      });
+      $("#opn").click(function () {
+        if (document.getElementById('bkg').style.visibility == 'hidden') {
+          document.getElementById('bkg').style.visibility = '';
+          $("#bkg").hide();
+        }
+        if (document.getElementById('dlg').style.visibility == 'hidden') {
+          document.getElementById('dlg').style.visibility = '';
+          $("#dlg").hide();
+        }
+        $("#bkg").fadeIn(500, "linear", function () { $("#dlg").show(800, "swing"); });
+      });
+
+    });
+  </script>
+ <!-- END This is for opening a Dialog Box for Archie -->
+
+ <!-- This is for opening a Dialog Box for Archie -->
+
+  <script>
+    $(document).ready(function () {
+      $("#closebtn1").click(function () {
+        $("#dlg1").hide('800', "swing", function () { $("#bkg1").fadeOut("500"); });
+      });
+      $("#opn1").click(function () {
+        if (document.getElementById('bkg1').style.visibility == 'hidden') {
+          document.getElementById('bkg1').style.visibility = '';
+          $("#bkg1").hide();
+        }
+        if (document.getElementById('dlg1').style.visibility == 'hidden') {
+          document.getElementById('dlg1').style.visibility = '';
+          $("#dlg1").hide();
+        }
+        $("#bkg1").fadeIn(500, "linear", function () { $("#dlg1").show(800, "swing"); });
+      });
+
+    });
+  </script>
+ <!-- END This is for opening a Dialog Box for Archie -->
+<script>
+(function($) {
+    $(document).ready(function() {
+        var tileCount = $(".tile").length;
+        var columnWeight = 12 / tileCount;
+        var selectedColumnWeight = columnWeight * 1.5
+        var unselectedColumnWeight = (12 - selectedColumnWeight) / (tileCount - 1) ;
+
+        $(".tile").click(function() {
+            var tile = $(this);
+            var otherTiles = tile.siblings();
+            var currentSelectedTile = otherTiles.filter(".selected");
+            var unselectedOtherTiles = otherTiles.not(".selected");
+            var otherTileWeight, tileWeight;
+            if (currentSelectedTile.length) {
+                otherTileWeight = unselectedColumnWeight;
+                tileWeight = unselectedColumnWeight;
+            }
+            else {
+                otherTileWeight = columnWeight;
+                tileWeight = columnWeight;
+            }
+
+            tile.toggleClass("selected col" + tileWeight + " col" + selectedColumnWeight, 600);
+            currentSelectedTile.toggleClass("selected col" + unselectedColumnWeight + " col" + selectedColumnWeight, 600);
+            unselectedOtherTiles.toggleClass("col" + otherTileWeight + " col" + unselectedColumnWeight, 600);
+        });
+    });
+})(jQuery);
+</script>
+<script>
+    $(document).ready(function () {
+      $("#closebtn").click(function () {
+        $("#dlg").hide('800', "swing", function () { $("#bkg").fadeOut("500"); });
+      });
+      $("#opn").click(function () {
+        if (document.getElementById('bkg').style.visibility == 'hidden') {
+          document.getElementById('bkg').style.visibility = '';
+          $("#bkg").hide();
+        }
+        if (document.getElementById('dlg').style.visibility == 'hidden') {
+          document.getElementById('dlg').style.visibility = '';
+          $("#dlg").hide();
+        }
+        $("#bkg").fadeIn(500, "linear", function () { $("#dlg").show(800, "swing"); });
+      });
+
+    });
+  </script>
+
+<script type="text/javascript"> </script>
+
+
+
+<style type="text/css">
+.style1 {
+	color: #932D09;
+}
+.style4 {
+	font-size: large;
+}
+.style5 {
+	font-size: xx-large;
+}
+.style6 {
+	font-size: x-large;
+}
+.style7 {
+	font-size: medium;
+}
+.style9 {
+	margin-left: 104px;
+}
+.style10 {
+	margin-bottom: 0px;
+	color: #932D09;
+}
+
+  .blockbkg {
+      background-color: black;
+      opacity: 90%;
+      filter:alpha(opacity=90);
+      background-color: rgba(0,0,0,0.90);
+      width: 100%;
+      min-height: 100%;
+      overflow: hidden;
+      float: absolute;
+      position: fixed;
+      top: 0;
+      left: 0;
+      color: white;
+    }
+    .cont {
+      background-color: #A8A9A3;
+      color: black;
+      font-size: 16px;
+      border: 1px solid gray;
+      padding: 20px;
+      display:block;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+	  right:10%;
+      height: 600px;
+      overflow-y: scroll;
+    }
+    .closebtn {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      margin: 2px;
+      float: right;
+      top: 0;
+      background-image: url(Mehdi%20Mirakhorli_files/x.png);
+      background-repeat: no-repeat;
+      background-position:center;
+      background-color: lightgray;
+      display: block;
+    }
+    .closebtn:hover {
+      cursor: pointer;
+    }
+
+
+.style11 {
+	color: #D3D4D1;
+}
+
+
+</style>
+
+
+<meta name="google-site-verification" content="eW-My5qXstsydEQ_iTQ82vEvfHiWl261RvHy5gRQLAE" />
+
+</head>
+
+<body class="not-front sidebar-right lightbox-processed">
+
+<div id="page" class="clear-block">
+
+<div class="clear-block" id="above-header">
+<div class="clear-block" id="above-header-inner">
+<span style="float: right">
+&nbsp; | &nbsp;
+<a href="mailto:mxmvse@rit.edu?Subject=Hello" target="_top"><span class="style11">Contact Me</span></a>
+
+</span>
+<a href="">Personal Web page of Mehdi Mirakhorli</a>
+</div>
 </div>
 
-</body>
-</html>
+<div id="header" class="clear-block">
+<div id="header-inner">
+<div id="logo-title">
+<h1 class="not-home">
+&nbsp;</h1> <!-- /.not-home -->
+</div> <!-- /#logo-title -->
+
+<div id="header-region">
+<div id="block-views-projects-block_2" class="block block block-views region-odd even region-count-1 count-2 clear-block"><div class="block-inner">
+
+<h2 class="title">Mehdi Mirakhorli</h2>
+
+<div class="content">
+<div class="view view-projects view-id-projects view-display-id-block_2 view-dom-id-3">
+
+
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first">
+
+<div class="views-field-title">
+<span class="field-content">
+
+
+  <br>Associate Professor | <a href="https://www.rit.edu/computing/cybersecurityinstitute">Director of Software Assurance Laboratory</a><br>
+University of Hawaii at Manoa |  <a href="https://www.rit.edu/directory/mxmvse-mehdi-mirakhorli">Information and Computer Sciences (ICS)</a>
+
+
+
+<br>
+<a href="">
+1680 East-West Road</br>
+  </a><br>
+<a href="">
+Honolulu, HI 96822 USA</a></span></div>
+
+<div class="views-field-body">
+<div class="field-content"><p>Email: mxmvse -at- rit.edu</p></div>
+<h3></h3>
+</div>
+</div>
+<div class="views-row views-row-2 views-row-even views-row-last">
+
+<div class="views-field-body">
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+</div>   </div>
+
+
+</div></div> <!-- /block-inner, /block -->
+</div> <!-- /#header-region -->
+
+
+<div class="header-info " style="width: 296px">
+<div class="slogan">
+<img alt="Mehdi" src="./files/image.jpg" width="211" height="233"></div>
+<!--div class="go-to-link"><a href="#">First time? Watch Video</a></div-->
+</div> <!-- /.header-info -->
+
+</div> <!-- /#header-inner -->
+</div> <!-- /#header -->
+<div id="nav" class="clear-block">
+<div id="nav-inner">
+<ul class="links" style="center: 5%; top: -8px; height: 53px; width: 90%">
+<li class="first menu-650 active-trail" style="height: 51px">
+<a href="./index.html" title="Mehdi" class="menu-650 active-trail active">
+<span style="width: 30px">Home</span></a></li>
+<li><a href="./CurriculumVitae.pdf" class="menu-5104"><span>Curriculum Vitae</span></a></li>
+<li class="menu-5104" "=""><a href="./Publications.html"><span style="width: 71px">Publications</span></a></li>
+<li class="menu-4922"><a href="https://design.se.rit.edu/"><span>Research Projects</span></a></li>
+<li class="menu-4922"><a href="./Teaching.html"><span>Teaching</span></a></li>
+<li><a href="./Personal.html" class="menu-4922"><span>Personal</span></a></li>
+</ul>
+</div> <!-- /#nav-inner -->
+</div> <!-- /#nav -->
+
+
+
+
+<div id="main" class="clear-block">
+<table style="width: 100%">
+<tbody><tr>
+<td style="width: 100%">
+
+
+<div class="views-field-title">
+<span class="field-content">
+</br>
+
+<meta name="description" content="Mehdi Mirakhorli, Director of Cybersecurity Research in GCI, Department of Software Engineering, Golisano College of Computing and Information Sciences, 585-475-4663, mxmvse@rit.edu" />
+
+
+
+</span></div>
+
+
+<div class="panel-main-area-wrap"   align="justify"  style="right: -88px; top: 0px; width: 97%; margin-left: 0px;">
+
+
+<p>
+<font size="3" line-height=2em>
+ Mehdi Tarrit Mirakhorli is an associate professor in the department of Information and Computer Sciences at University of Hawaii at Manoa. 
+	Prior to that Dr. Mirakhorli served as Kodak Endowed Chair, Associate Professor and Director of Research at <a href="https://www.rit.edu/cybersecurity/">ESL Global Cybersecurity Institute</a> and Software Engineering Department at Rochester Institute of Technology.
+Mirakhorli is also the director of <a href="https://design.se.rit.edu">Software Design and Productivity Laboratory</a>.
+His research is the broad area of software engineering, he has carried out various projects of national importance in the areas of trustworthy software, software assurance, cybersecurity, resiliency, scientific software development, and software enabled sustainable disposal.
+
+</br>
+His team has developed techniques based on program analysis, software verification and custom machine learning algorithms to solve software engineering problems at scale
+in the areas such as software architecture analysis, requirements engineering, software security, software compliance and verification, and source code comprehension.
+
+Mirakhorli has led several large fundamental research and technology transition projects with the Department of Defense, U.S. Air Force, U.S. Department of Homeland Security and National Science Foundation (NSF).
+He has more than a decade of experience as a software architect and tech-lead on large, complex and multi-stakeholder projects such as AI-enabled automation, cyber-threats and intelligence, data-intensive meteorological systems, and health care. In 2017, he has worked at the
+  <a href="http://www.wpafb.af.mil/afrl/">Air Force Research Laboratory</a> as a faculty fellow. Currently, he serves on the advisory board of two
+  leading software companies in the technology development sector. Mirakhorli is a recipient of the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1943300">NSF CAREER Award</a>. His paper  <a href="http://dl.acm.org/citation.cfm?id=2337298" target="_blank">"A Tactic-Centric Approach for Automating Traceability of Quality Concerns"</a>
+  received <a href="https://www.sigsoft.org/awards/distinguishedPaperAward.html"> ACM SIGSOFT Distinguished Paper Award</a> at ICSE'2012. Mirakhorli's paper <a href="https://design.se.rit.edu/papers/TacticalVulnerabilities.pdf">
+  "Understanding Software Vulnerabilities Related to Architectural Security Tactics: An Empirical Investigation of Chromium, PHP and Thunderbird"</a> received the Best Paper Award at the <a href="http://icsa-conferences.org/2017/">2017 IEEE International Conference on Software Architecture</a>.
+Mirakhorli serves as associated editor for IEEE Transaction on Software Engineering (TSE)  and Empirical Software Engineering (EMSE) Journals.
+He is a public speaker in the area of software architecture and application security. He is also an  <a href="https://speakers.acm.org/speakers/mirakhorli_16409">ACM Distinguished Speaker</a>, has been <a>ALTA Distinguished Speaker at Alcatel-Lucent</a>, and
+given several technical briefings.
+  <br>
+  <br>
+</p>
+</font>
+<td style="width:1000%">
+</td>
+</tr>
+</tbody></table>
+<!-- /#main -->
+
+<div id="footer" class="clear-block">
+<div id="footer-inner">
+<div id="foot-links">
+
+
+<a href="">Last Updated February 1st, 2018</a> &nbsp;|&nbsp;
+
+
+
+
+
+<a href="">2018 © copyright</a>           </div>
+
+
+ <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=9623175;
+var sc_invisible=1;
+var sc_security="9028568b";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script><script type="text/javascript" src="./files/counter.js"></script>
+<noscript>&lt;div class="statcounter"&gt;&lt;a title="free web stats"
+href="http://statcounter.com/free-web-stats/"
+target="_blank"&gt;&lt;img class="statcounter"
+src="http://c.statcounter.com/9623175/0/9028568b/1/"
+alt="free web stats"&gt;&lt;/a&gt;&lt;/div&gt;</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+
+
+</div> <!-- /#footer-inner -->
+</div> <!-- /#footer -->
+</div>
+<!-- /#page -->
+
+
+
+
+
+
+
+
+            </body></html>
