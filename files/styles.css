@@ -1,0 +1,255 @@
+/* Original CSS: Keeping all original styles */
+#aggregator .feed-source .feed-title { margin-top: 0; }
+#aggregator .feed-source .feed-image img { margin-bottom: 0.75em; }
+#aggregator .feed-source .feed-icon { float: right; display: block; }
+#aggregator .feed-item { margin-bottom: 1.5em; }
+#aggregator .feed-item-title { margin-bottom: 0; font-size: 1.3em; }
+#aggregator .feed-item-meta, #aggregator .feed-item-body { margin-bottom: 0.5em; }
+#aggregator .feed-item-categories { font-size: 0.9em; }
+#aggregator td { vertical-align: bottom; }
+#aggregator td.categorize-item { white-space: nowrap; }
+#aggregator .categorize-item .news-item .body { margin-top: 0; }
+#aggregator .categorize-item h3 { margin-bottom: 1em; margin-top: 0; }
+
+.node-unpublished { background-color: #fff4f4; }
+.preview .node { background-color: #ffffea; }
+#node-admin-filter ul { list-style-type: none; padding: 0; margin: 0; width: 100%; }
+#node-admin-buttons { float: left; margin-left: 0.5em; clear: right; }
+td.revision-current { background: #ffc; }
+.node-form .form-text { display: block; width: 95%; }
+.node-form .container-inline .form-text { display: inline; width: auto; }
+.node-form .standard { clear: both; }
+.node-form textarea { display: block; width: 95%; }
+.node-form .attachments fieldset { float: none; display: block; }
+.terms-inline { display: inline; }
+
+fieldset { margin-bottom: 1em; padding: 0.5em; }
+form { margin: 0; padding: 0; }
+hr { height: 1px; border: 1px solid gray; }
+img { border: 0; max-width: 100%; height: auto; }
+table { border-collapse: collapse; width: 100%; }
+th { text-align: left; padding-right: 1em; border-bottom: 3px solid #ccc; }
+.clear-block:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clear-block { display: inline-block; }
+* html .clear-block { height: 1%; }
+.clear-block { display: block; }
+
+/* Presentation adjustments for multiple devices (Responsive Design) */
+body {
+    background-color: #fff;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    color: #000;
+}
+
+/* Headers and main elements styling */
+h1, h2, h3 {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-weight: 100;
+    line-height: 1.2em;
+}
+
+h1 { font-size: 1.8em; color: #932d09; }
+h2 { font-size: 1.6em; color: #444; }
+h3 { font-size: 1.4em; color: #444; }
+
+p { margin-top: 0.5em; margin-bottom: 1em; }
+
+a { color: #932d09; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { border: none; max-width: 100%; height: auto; }
+
+/* Tables and layout styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr { vertical-align: top; }
+thead th {
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+}
+
+td, th { padding: 8px; text-align: left; }
+
+/* Responsive Adjustments using Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 90%;
+        padding: 10px;
+    }
+
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1.4em; }
+    h3 { font-size: 1.2em; }
+
+    /* Navigation */
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+    /* Images centering on smaller screens */
+    .introduction img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Introduction section */
+    .introduction {
+        text-align: center;
+    }
+
+    .contact-info, .research-highlights {
+        text-align: center;
+        padding: 0 1em;
+    }
+
+    /* Making tables scrollable on mobile */
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    /* General adjustments for containers */
+    .tile {
+        text-align: center;
+    }
+
+    .cont {
+        width: 90%;
+        left: 5%;
+        top: 10%;
+        height: auto;
+    }
+
+    .blockbkg {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    /* Footer responsiveness */
+    footer {
+        text-align: center;
+        font-size: 0.85em;
+        padding: 1em;
+    }
+}
+
+/* Adjustments for larger screens (Tablets and Desktops) */
+@media screen and (min-width: 769px) {
+    .introduction {
+        display: flex;
+        align-items: center;
+    }
+
+    .introduction img {
+        margin-right: 1.5em;
+    }
+
+    .contact-info, .research-highlights {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 1em;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        margin: 0 0.5em;
+    }
+}
+
+/* Fieldsets, forms, and buttons */
+fieldset {
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+.node-form .form-text, .node-form textarea {
+    width: 95%;
+    display: block;
+}
+
+.node-form .container-inline .form-text {
+    display: inline;
+    width: auto;
+}
+
+.form-submit {
+    padding: 0.5em 1em;
+    background-color: #0072b9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #005a8a;
+}
+
+/* Button and form adjustments */
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+    border: 2px solid red;
+}
+
+.form-item .description {
+    font-size: 0.85em;
+}
+
+.form-item label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-item label.option {
+    display: inline;
+    font-weight: normal;
+}
+
+.form-checkboxes, .form-radios {
+    margin: 1em 0;
+}
+
+.form-checkboxes .form-item, .form-radios .form-item {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+/* Footer styling */
+footer {
+    background-color: #53544e;
+    color: #d3d4d1;
+    padding: 1em;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Utility and form reset styles */
+.clear-block {
+    clear: both;
+}
+
+.clear-block:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
