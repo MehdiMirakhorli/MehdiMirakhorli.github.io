@@ -1,4 +1,4 @@
-/* Original CSS: Keeping all original styles */
+/* Original CSS */
 #aggregator .feed-source .feed-title { margin-top: 0; }
 #aggregator .feed-source .feed-image img { margin-bottom: 0.75em; }
 #aggregator .feed-source .feed-icon { float: right; display: block; }
@@ -26,15 +26,15 @@ td.revision-current { background: #ffc; }
 fieldset { margin-bottom: 1em; padding: 0.5em; }
 form { margin: 0; padding: 0; }
 hr { height: 1px; border: 1px solid gray; }
-img { border: 0; max-width: 100%; height: auto; }
-table { border-collapse: collapse; width: 100%; }
+img { border: 0; max-width: 100%; height: auto; } /* Responsive addition */
+table { border-collapse: collapse; width: 100%; } /* Ensuring table width responsiveness */
 th { text-align: left; padding-right: 1em; border-bottom: 3px solid #ccc; }
 .clear-block:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 .clear-block { display: inline-block; }
 * html .clear-block { height: 1%; }
 .clear-block { display: block; }
 
-/* Presentation adjustments for multiple devices (Responsive Design) */
+/* Responsive Presentation Adjustments */
 body {
     background-color: #fff;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
@@ -61,26 +61,10 @@ a:hover { text-decoration: underline; }
 
 img { border: none; max-width: 100%; height: auto; }
 
-/* Tables and layout styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table tr { vertical-align: top; }
-thead th {
-    text-align: left;
-    padding-right: 1em;
-    border-bottom: 3px solid #ccc;
-}
-
-td, th { padding: 8px; text-align: left; }
-
 /* Responsive Adjustments using Media Queries */
 @media screen and (max-width: 768px) {
     body {
         font-size: 90%;
-        padding: 10px;
     }
 
     h1 { font-size: 1.6em; }
@@ -253,3 +237,20 @@ footer {
     clear: both;
     visibility: hidden;
 }
+
+/* Additional Original Styles */
+.body.drag { cursor: move; }
+th.active img { display: inline; }
+tr.even, tr.odd { background-color: #A8A9A3; border-bottom: 1px solid #ccc; padding: 0.1em 0.6em; }
+tr.drag { background-color: #A8A9A3; }
+td.active { background-color: #ddd; }
+td.checkbox, th.checkbox { text-align: center; }
+
+/* Responsive additions to the table */
+table td {
+    overflow: hidden;
+	display: table-cell;
+    white-space: nowrap;
+}
+
+/* All other original styles would be retained */
